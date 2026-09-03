@@ -29,8 +29,8 @@ code { font: .92em ui-monospace, SFMono-Regular, Consolas, monospace;
 </head>
 <body>
 <h1>ChronoKinesis Privacy Policy</h1>
-<p class="meta"><strong>Effective date:</strong> 2026-08-24 <strong>App:</strong> ChronoKinesis (Android package <code>org.chronokinesis.game</code>) <strong>Developer:</strong> PTLDGames — contact: ptldgames@gmail.com</p>
-<p>ChronoKinesis is an offline arcade game. It shows no ads, contains no ad SDKs, never collects your device&#x27;s Advertising ID, and sells no data. The app collects data in exactly two situations, both optional and described below.</p>
+<p class="meta"><strong>Effective date:</strong> 2026-09-03 <strong>App:</strong> ChronoKinesis (Android package <code>org.chronokinesis.game</code>) <strong>Developer:</strong> PTLDGames — contact: ptldgames@gmail.com</p>
+<p>ChronoKinesis is an arcade game that can be played entirely offline. It sells no data. It shows <strong>rewarded ads only</strong> — short videos you explicitly choose to watch in exchange for an in-game bonus; the game never interrupts play with ads. It offers a few optional <strong>in-app purchases</strong> through Google Play. Data is collected in exactly the four situations described below; the first two are optional opt-ins, and the fourth happens only if you buy something.</p>
 <h2>1. Optional Google Play Games sign-in</h2>
 <p>If you choose to sign in with Google Play Games, Google provides the app your Play Games player ID so it can:</p>
 <ul>
@@ -49,17 +49,33 @@ code { font: .92em ui-monospace, SFMono-Regular, Consolas, monospace;
 </ul>
 <p><strong>If you opt out or never answer</strong>, Firebase collection stays disabled: analytics storage is denied, no events are sent, and events buffered before your choice are discarded.</p>
 <p><strong>If you revoke consent later</strong>, the app immediately disables Analytics and Crashlytics, resets the locally stored analytics data (including the app-instance identifier), and deletes any unsent crash reports.</p>
-<p><strong>Advertising:</strong> the app requests no advertising-ID permission, keeps Advertising ID collection disabled, and denies every advertising consent signal (ad storage, ad user data, ad personalization) even when you opt in to sharing play data.</p>
+<p>Analytics never receives advertising data: the app denies every Firebase advertising consent signal (ad storage, ad user data, ad personalization) even when you opt in to sharing play data. Advertising is handled separately, as described next.</p>
+<h2>3. Rewarded advertising (Google AdMob)</h2>
+<p>The game offers <strong>rewarded ads</strong> at a few clearly marked moments — reviving a lost run, doubling a run&#x27;s coin salvage, doubling the recurring supply drop. Each one is opt-in: an ad plays only when you press its button, and you can always decline and keep playing.</p>
+<p>Ads are served by <strong>Google AdMob</strong> (Google Mobile Ads SDK). To serve and measure ads, Google may collect:</p>
+<ul>
+<li>your device&#x27;s <strong>Advertising ID</strong> (the app declares the corresponding <code>AD_ID</code> permission),</li>
+<li>coarse device information (model, OS version, screen properties),</li>
+<li>IP address (used, among other things, for approximate location as part of ad serving), and</li>
+<li>ad interaction data (which ads were shown, watched, or clicked).</li>
+</ul>
+<p>This data is collected and processed by Google under the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>; see also <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">how Google uses information from sites or apps that use its services</a>.</p>
+<p><strong>Your consent (EEA/UK):</strong> in regions where consent is required, a Google consent form (the Google-certified User Messaging Platform) is shown before any ad can load, and ads respect the choices you make there. You can review or change those choices at any time via <strong>Settings → PRIVACY → AD PRIVACY OPTIONS</strong>. You can also reset your device&#x27;s Advertising ID or delete it entirely in Android&#x27;s own settings (Settings → Privacy → Ads).</p>
+<p>The app itself stores no advertising data and never combines ad data with gameplay analytics.</p>
+<h2>4. Optional in-app purchases (Google Play Billing)</h2>
+<p>The shop sells a handful of one-time items (premium avatars and the SCRAPPER module) for real money. Payment is handled entirely by <strong>Google Play</strong>: the game never sees your card, bank, or billing address. Google processes the purchase under the <a href="https://play.google.com/about/play-terms/" rel="noopener">Google Play Terms of Service</a> and the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>, and Google Play Billing provides the game with a purchase record (product id, order id, purchase token and state) so it can unlock what you bought and restore it on a new device.</p>
+<p>The game keeps only the list of items you own in its local save. If you use the optional cloud save (section 1), that list travels with the rest of your save to your own Google account. Refunds and purchase history are managed in your Google Play account, not in the game.</p>
 <h2>Data retention</h2>
-<p>Analytics event data is retained by Google Firebase for 14 months and then deleted automatically. Crash reports are retained for 90 days by Crashlytics&#x27; standard policy.</p>
+<p>Analytics event data is retained by Google Firebase for 14 months and then deleted automatically. Crash reports are retained for 90 days by Crashlytics&#x27; standard policy. Advertising data collected by Google AdMob is retained under Google&#x27;s advertising data retention policies. Purchase records are retained by Google Play under its own policies; the game&#x27;s local list of owned items lives as long as the save does.</p>
 <h2>Data sharing and selling</h2>
-<p>Collected data is processed by Google (Firebase, Play Games) as a service provider on the developer&#x27;s behalf. It is not sold, not used for advertising, and not shared with any other third party.</p>
+<p>Collected data is processed by Google (Firebase, Play Games, AdMob, Play Billing). No data is sold. Analytics and Play Games data is not used for advertising and not shared with any other third party. Advertising data is shared with Google as the advertising provider, solely to serve and measure the rewarded ads described above.</p>
 <h2>Children</h2>
 <p>ChronoKinesis is not directed at children under 13, and the app collects no personal information beyond what is described above.</p>
 <h2>Your choices and deletion</h2>
 <ul>
 <li>Play without Google sign-in: no Play Games data exists.</li>
 <li>Decline or revoke SHARE PLAY DATA in Settings: analytics/crash collection stops, local analytics data is reset, unsent crash reports are deleted.</li>
+<li>Never press an ad button: rewarded ads are the only ads in the game, and none plays without your button press. In consent regions you can decline or withdraw ad consent under Settings → PRIVACY → AD PRIVACY OPTIONS.</li>
 <li>Delete cloud saves: use the in-game cloud controls, or remove the app&#x27;s data in your Google account&#x27;s Play Games settings.</li>
 <li>For any other deletion request, contact ptldgames@gmail.com with no personal details beyond what&#x27;s needed to act on the request.</li>
 </ul>
