@@ -29,44 +29,62 @@ code { font: .92em ui-monospace, SFMono-Regular, Consolas, monospace;
 </head>
 <body>
 <h1>ChronoKinesis Privacy Policy</h1>
-<p class="meta"><strong>Effective date:</strong> 2026-09-19</p>
-<p><strong>App:</strong> ChronoKinesis (Android package <code>org.chronokinesis.game</code>)</p>
-<p><strong>Developer:</strong> PTLDGames — contact: ptldgames@gmail.com</p>
-<p>ChronoKinesis is an arcade game that can be played entirely offline. It sells no data and contains no advertising or in-app purchases. Optional online features are limited to Google Play Games, opt-in Firebase analytics and crash reporting, a local gift reminder, and a feedback form opened in your browser.</p>
+<p class="meta"><strong>Effective date:</strong> 2026-09-07 <strong>App:</strong> ChronoKinesis (Android package <code>org.chronokinesis.game</code>) <strong>Developer:</strong> PTLDGames — contact: ptldgames@gmail.com</p>
+<p>ChronoKinesis is an arcade game that can be played entirely offline. It sells no data. It shows <strong>rewarded ads only</strong> — short videos you explicitly choose to watch in exchange for an in-game bonus; the game never interrupts play with ads. It offers a few optional <strong>in-app purchases</strong> through Google Play. Data is collected in exactly the four situations described below; the first two are optional opt-ins, and the fourth happens only if you buy something.</p>
 <h2>1. Optional Google Play Games sign-in</h2>
-<p>If you choose to sign in with Google Play Games, Google provides the app your Play Games player ID so it can unlock achievements, submit scores to leaderboards, and store game progress in your Google account for restoration on your devices. Scores submitted to a leaderboard are visible to other players through Google&#x27;s leaderboard service.</p>
-<p>The app stores no separate server copy. You can play without signing in. Play Games data is managed by Google under the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>, and you can remove the app&#x27;s Play Games data through your Google account&#x27;s Play Games settings.</p>
-<h2>2. Optional gameplay analytics and crash reporting</h2>
-<p>After the title screen, the app asks whether you want to <strong>SHARE PLAY DATA</strong>. Nothing is collected until you explicitly choose to share, and you can change your choice at any time in Settings.</p>
-<p>If you opt in, the app uses Google Firebase to collect:</p>
+<p>If you choose to sign in with Google Play Games, Google provides the app your Play Games player ID so it can:</p>
 <ul>
-<li><strong>Gameplay events:</strong> fixed-schema events about tutorial progress, runs, waves and bosses, weapon usage, in-game shop interactions using in-game currency, avatar selection, continues, leaderboards, and cloud saves. These events contain game identifiers and numbers, not free-form text, contact details, location, or identity fields.</li>
-<li><strong>Standard Analytics data:</strong> a random app-specific instance identifier, coarse device/app information, and session events such as first app open.</li>
-<li><strong>Crash and error reports:</strong> stack traces and device state tied to a random installation identifier, used only to find and fix bugs.</li>
+<li>unlock <strong>achievements</strong>,</li>
+<li>submit your scores to <strong>leaderboards</strong> (scores you submit are visible to other players through Google&#x27;s leaderboard service), and</li>
+<li>store your <strong>game progress</strong> (Saved Games) in your Google account so it can be restored on your devices.</li>
 </ul>
-<p>If you opt out or never answer, Firebase collection stays disabled, buffered events are discarded, and no analytics or crash report is sent. Choosing <strong>CONTINUE WITHOUT SHARING</strong> may cause the question to return once after several more plays; declining again makes that choice permanent. Revoking consent later disables both services, resets local Analytics data, and deletes unsent crash reports.</p>
-<p>Firebase advertising consent signals remain denied. The app does not use Analytics for advertising and does not include an advertising SDK or request the Android Advertising ID.</p>
-<h2>3. In-game shop</h2>
-<p>The game has no real-money purchases. All shop items use fragments or boss cores earned in play. No payment method, billing address, Play purchase record, or purchase history is collected by the app.</p>
-<h2>4. Optional gift reminders</h2>
-<p>The game can post one local reminder when the recurring free gift is ready. It is opt-in: Android asks for notification permission only after you have claimed a gift, and you can decline. The reminder is scheduled and shown on your device by Android&#x27;s alarm and notification services. No reminder data is sent anywhere, no server is involved, and your choice is stored only in the local save. Turn reminders on or off under <strong>Settings → GAME → FREE GIFT REMINDER</strong> or in Android&#x27;s notification settings.</p>
-<h2>5. Optional feedback form</h2>
-<p><strong>Settings → ONLINE → SEND FEEDBACK</strong> opens a Google Form in your browser. The game attaches nothing and sends nothing on its own. Only what you type is submitted, and only when you press the form&#x27;s Send button. The form asks for a description, where it happened, the game version and phone model, and an optional email address if you want a reply. Responses are stored by Google Forms in the developer&#x27;s Google account, used to fix problems and improve the game, and deleted once handled. Google&#x27;s privacy policy applies to the form.</p>
+<p>The app stores no copy of this data outside your device and your Google account. You can play without signing in; nothing above is collected then. Play Games data is managed by Google under the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>; you can remove the app&#x27;s Play Games data through your Google account&#x27;s Play Games settings.</p>
+<h2>2. Optional gameplay analytics and crash reporting (explicit opt-in)</h2>
+<p>After the title screen the app asks whether you want to <strong>SHARE PLAY DATA</strong>. Nothing is collected until you explicitly choose to share, and you can change your choice at any time in Settings.</p>
+<p><strong>If you opt in</strong>, the app uses Google Firebase to collect:</p>
+<ul>
+<li><strong>Gameplay events</strong> — anonymous, fixed-schema events about how a play session went: tutorial progress, run start/end (score, kills, how the run ended), wave and boss outcomes, weapon usage summaries, in-game shop (Forge) interactions with in-game currency amounts, avatar selection, continue decisions, leaderboard actions, and cloud-save actions. Every event carries only game identifiers and numbers (app version, game mode, ruleset id, run counter). No free-form text, no contact data, no location data, and no identity fields exist in the schema.</li>
+<li><strong>Standard Firebase Analytics data</strong> — an app-instance identifier (random, app-specific, not the Advertising ID), coarse device and app information (device model, OS version, app version), and session events such as first app open.</li>
+<li><strong>Crash and error reports</strong> (Firebase Crashlytics) — stack traces and device state at the time of a crash, tied to a random installation identifier, used solely to find and fix bugs.</li>
+</ul>
+<p><strong>If you opt out or never answer</strong>, Firebase collection stays disabled: analytics storage is denied, no events are sent, and events buffered before your choice are discarded.</p>
+<p>If you choose <strong>CONTINUE WITHOUT SHARING</strong>, nothing is collected and the question may return once more after several more plays; if you decline a second time it is never asked again. Choosing <strong>DISABLED</strong> in Settings stops the question immediately. Either way, no data is collected while your answer is anything other than an explicit yes.</p>
+<p><strong>If you revoke consent later</strong>, the app immediately disables Analytics and Crashlytics, resets the locally stored analytics data (including the app-instance identifier), and deletes any unsent crash reports.</p>
+<p>Analytics never receives advertising data: the app denies every Firebase advertising consent signal (ad storage, ad user data, ad personalization) even when you opt in to sharing play data. Advertising is handled separately, as described next.</p>
+<h2>3. Rewarded advertising (Google AdMob)</h2>
+<p>The game offers <strong>rewarded ads</strong> at a few clearly marked moments — reviving a lost run, doubling a run&#x27;s fragment salvage, doubling the recurring free gift, and trying a premium avatar for two runs. Each one is opt-in: an ad plays only when you press its button, and you can always decline and keep playing.</p>
+<p>Ads are served by <strong>Google AdMob</strong> (Google Mobile Ads SDK). To serve and measure ads, Google may collect:</p>
+<ul>
+<li>your device&#x27;s <strong>Advertising ID</strong> (the app declares the corresponding <code>AD_ID</code> permission),</li>
+<li>coarse device information (model, OS version, screen properties),</li>
+<li>IP address (used, among other things, for approximate location as part of ad serving), and</li>
+<li>ad interaction data (which ads were shown, watched, or clicked).</li>
+</ul>
+<p>This data is collected and processed by Google under the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>; see also <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">how Google uses information from sites or apps that use its services</a>.</p>
+<p><strong>Your consent (EEA/UK):</strong> in regions where consent is required, a Google consent form (the Google-certified User Messaging Platform) is shown before any ad can load, and ads respect the choices you make there. You can review or change those choices at any time via <strong>Settings → PRIVACY → AD PRIVACY OPTIONS</strong>. You can also reset your device&#x27;s Advertising ID or delete it entirely in Android&#x27;s own settings (Settings → Privacy → Ads).</p>
+<p>The app itself stores no advertising data and never combines ad data with gameplay analytics.</p>
+<h2>4. Optional in-app purchases (Google Play Billing)</h2>
+<p>The shop sells a handful of one-time items (premium avatars and the SCRAPPER module) for real money. Payment is handled entirely by <strong>Google Play</strong>: the game never sees your card, bank, or billing address. Google processes the purchase under the <a href="https://play.google.com/about/play-terms/" rel="noopener">Google Play Terms of Service</a> and the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>, and Google Play Billing provides the game with a purchase record (product id, order id, purchase token and state) so it can unlock what you bought and restore it on a new device.</p>
+<p>The game keeps only the list of items you own in its local save. If you use the optional cloud save (section 1), that list travels with the rest of your save to your own Google account. Refunds and purchase history are managed in your Google Play account, not in the game.</p>
+<h2>5. Optional gift reminders (local notifications, no data collected)</h2>
+<p>The game can post <strong>one local reminder</strong> when the recurring free gift is ready. It is opt-in: Android asks for notification permission only after you have claimed a gift for the first time, and you can decline. The reminder is scheduled and shown entirely <strong>on your device</strong> by Android&#x27;s own alarm and notification services — no reminder data is sent anywhere, no server is involved, and your choice is stored only in the local save (it is not included in cloud saves). Turn reminders on or off at any time under <strong>Settings → GAME → FREE GIFT REMINDER</strong>, or in Android&#x27;s app notification settings.</p>
+<h2>6. Optional feedback form (Google Forms)</h2>
+<p><strong>Settings → ONLINE → SEND FEEDBACK</strong> opens a Google Form in your browser. The game attaches nothing to it and sends nothing on its own: only what you type into the form is submitted, and only when you press its Send button. The form asks for a description, where it happened, the game version and your phone model, and an optional email address if you want a reply. Responses are stored by Google Forms in the developer&#x27;s Google account, used solely to fix problems and improve the game, and deleted once handled. Google&#x27;s own privacy policy applies to the form itself.</p>
 <h2>Data retention</h2>
-<p>Firebase Analytics event data is retained for 14 months and then deleted automatically. Crash reports are retained for 90 days under Crashlytics&#x27; standard policy. Play Games data remains in your Google account until you delete it. Feedback responses are deleted after they are handled.</p>
+<p>Analytics event data is retained by Google Firebase for 14 months and then deleted automatically. Crash reports are retained for 90 days by Crashlytics&#x27; standard policy. Advertising data collected by Google AdMob is retained under Google&#x27;s advertising data retention policies. Purchase records are retained by Google Play under its own policies; the game&#x27;s local list of owned items lives as long as the save does.</p>
 <h2>Data sharing and selling</h2>
-<p>No data is sold. Optional data is processed only by the service needed for the feature you choose: Firebase, Play Games, or Google Forms. It is not used for advertising and is not shared with other third parties.</p>
+<p>Collected data is processed by Google (Firebase, Play Games, AdMob, Play Billing, and Google Forms for feedback you choose to send). No data is sold. Analytics and Play Games data is not used for advertising and not shared with any other third party. Advertising data is shared with Google as the advertising provider, solely to serve and measure the rewarded ads described above.</p>
 <h2>Children</h2>
-<p>ChronoKinesis is not directed at children under 13 and collects no personal information beyond what is described above.</p>
+<p>ChronoKinesis is not directed at children under 13, and the app collects no personal information beyond what is described above.</p>
 <h2>Your choices and deletion</h2>
 <ul>
-<li>Play without Google sign-in: no Play Games data is provided to the app.</li>
-<li>Decline or revoke <strong>SHARE PLAY DATA</strong>: Analytics/Crashlytics collection stops, local Analytics data is reset, and unsent crash reports are deleted.</li>
-<li>Delete cloud saves using the in-game cloud controls or remove the app&#x27;s data through your Google account&#x27;s Play Games settings.</li>
-<li>Disable gift reminders in the game or Android notification settings.</li>
-<li>For another deletion request, contact ptldgames@gmail.com with no personal details beyond what is needed to act on the request.</li>
+<li>Play without Google sign-in: no Play Games data exists.</li>
+<li>Decline or revoke SHARE PLAY DATA in Settings: analytics/crash collection stops, local analytics data is reset, unsent crash reports are deleted.</li>
+<li>Never press an ad button: rewarded ads are the only ads in the game, and none plays without your button press. In consent regions you can decline or withdraw ad consent under Settings → PRIVACY → AD PRIVACY OPTIONS.</li>
+<li>Delete cloud saves: use the in-game cloud controls, or remove the app&#x27;s data in your Google account&#x27;s Play Games settings.</li>
+<li>For any other deletion request, contact ptldgames@gmail.com with no personal details beyond what&#x27;s needed to act on the request.</li>
 </ul>
 <h2>Changes</h2>
-<p>Material changes to this policy will appear here with a new effective date before they take effect.</p>
+<p>Material changes to this policy will be reflected here with a new effective date before they take effect.</p>
 </body>
 </html>
